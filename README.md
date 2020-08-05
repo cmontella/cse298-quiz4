@@ -8,6 +8,8 @@ Make at least 1 commit per question.
 
 What is the difference between Dijkstra's Algorithm and A*. Why would one use Dijkstra's over A* and vice versa?
 
+The difference between Dijkstra’s Algorithm and A* is that Dijkstra’s doesn’t use a heuristic function therefore classifying it as an uniformed search Algorithm. With a lot of grids it is better better to use A* as it is faster though in very small grids its better to use Dijkstra’s.
+
 ## Question 2
 
 Consider the following robot in a grid 2D grid world:
