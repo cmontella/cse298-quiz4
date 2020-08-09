@@ -23,6 +23,8 @@ The cell (0,0) is at the bottom left. The robot starts at cell (3,3) and is faci
 Perform the A* algorithm by hand to find the shortest path from the robot's starting location to the goal. Write down each step of the algorithm, including the current cell, open set of cells O, the closed set of cells C, the parent of each cell, and the current g-score and f-scores for each cell (these can be a sparse lists i.e. you don't need to write the scores/parents of the cells haven't been considered by the algorithm yet). You can use any heuristic you like, but specify the one you are using.
 
 ```
+-> marks the minimum F-score
+
 Initial robot: (3,3)
 Goal node: (12,1)
 Heuristic function: Euclidean distance
@@ -61,7 +63,7 @@ G-score:
 	(2,4): sqrt(2)
 	(2,2): sqrt(2)
 F-score:
-->(4,3): 9.25
+      ->(4,3): 9.25
 	(3,4): 10.49
 	(2,3): 11.20
 	(3,2): 10.06
@@ -88,7 +90,7 @@ G-score:
 	(3,2): 2.41
 	(3,4): 2.41
 F-score:
-->(5,3): 9.28
+      ->(5,3): 9.28
 	(4,4): 10.54
 	(3,3): 11.22
 	(4,2): 10.06
@@ -117,7 +119,7 @@ G-score:
 F-score:
 	(5,4): 10.62
 	(5,2): 10.07
-->(6,3): 9.32
+      ->(6,3): 9.32
 	(4,3): 11.25
 	(6,4): 10.12
 	(6,2): 9.49
@@ -144,7 +146,7 @@ G-score:
 F-score:
 	(6,4): 10.71
 	(6,2): 10.08
-->(7,3): 9.39
+      ->(7,3): 9.39
 	(5,3): 11.28
 	(7,4): 10.24
 	(7,2): 9.51
@@ -171,7 +173,7 @@ G-score:
 F-score:
 	(7,4): 10.83
 	(7,2): 10.10
-->(8,3): 9.47
+      ->(8,3): 9.47
 	(6,3): 11.32
 	(8,4): 10.41
 	(8,2): 9.53
@@ -201,7 +203,7 @@ F-score:
 	(9,3): 9.61
 	(7,3): 11.39
 	(9,4): 10.65
-->(9,2): 9.57
+      ->(9,2): 9.57
 	(7,2): 11.51
 	(7,4): 12.24
 
@@ -228,7 +230,7 @@ F-score:
 	(9,3): 11.02
 	(9,1): 11.41
 	(8,2): 11.53
-->(10,2): 9.65
+      ->(10,2): 9.65
 	(10,3): 10.65
 	(10,1): 9.98
 	(8,3): 12.29
@@ -255,7 +257,7 @@ F-score:
 	(10,3): 11.24
 	(10,1): 11.57
 	(9,2): 11.57
-->(11,2): 9.82
+      ->(11,2): 9.82
 	(11,3): 11.06
 	(11,1): 9.82
 	(9,3): 12.43
@@ -284,7 +286,7 @@ F-score:
 	(10,2): 11.57
 	(12,2): 10.41
 	(12,3): 11.06
-->(12,1): 9.82
+      ->(12,1): 9.82
 	(10,3): 12.43
 	(10,1): 11.82
 
