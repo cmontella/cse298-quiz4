@@ -8,6 +8,10 @@ Make at least 1 commit per question.
 
 What is the difference between Dijkstra's Algorithm and A*. Why would one use Dijkstra's over A* and vice versa?
 
+Dijkstra's Algorithm always finds the shortest path between to nodes in a graph. To do this, it searches every single node. A* will find *a* path between two nodes in a graph if one exists, but it's not guaranteed to be optimal. This is becuase A* uses a heuristic to guide the search, which makes it suboptimal but faster. The choice of heuristic can produce different paths. Once the goal is reached, the algorithm terminates even if there are nodes left that have not been visited.
+
+You would use Dijkstra's Algorithm if an optimal path is needed. A* is better if you need a good-enough path without having to exhaustively search the entire graph. If the graph is very large, this could be beneficial.
+
 ## Question 2
 
 Consider the following robot in a grid 2D grid world:
